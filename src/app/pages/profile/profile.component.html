@@ -30,8 +30,8 @@
     <div class="col-lg-5">
         <div class="card">
             <div class="card-body" align="center">
-                <h4 class="card-title">Fotografía del usuario</h4>
-                <h6 class="card-subtitle">fotografía del usuario</h6>
+                <h4 class="card-title">Fotografía de {{usuario.nombre}}</h4>
+                <h6 class="card-subtitle">fotografía de {{usuario.nombre}}</h6>
 
                 <img *ngIf="!imagenTemp" [src]="usuario.img | imagen" class="w150">
                 <img *ngIf="imagenTemp" [src]="imagenTemp" class="w150">

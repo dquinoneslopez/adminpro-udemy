@@ -17,6 +17,8 @@ import { PipesModule } from '../pipes/pipes.module';
 import { ProfileComponent } from './profile/profile.component';
 
 import { PAGES_ROUTES } from './pages.routes';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
 
 
 
@@ -33,6 +35,8 @@ import { PAGES_ROUTES } from './pages.routes';
         PromesasComponent,
         RxjsComponent,
         ProfileComponent,
+        UsuariosComponent,
+        ModalUploadComponent,
     ],
     exports: [
         PagesComponent,
