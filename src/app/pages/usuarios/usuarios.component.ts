@@ -34,6 +34,7 @@ export class UsuariosComponent implements OnInit {
   mostrarModal(id: string) {
 
     this._modalUploadService.mostrarModal( 'usuarios', id );
+
   }
 
   cargarUsuarios() {
@@ -120,11 +121,8 @@ export class UsuariosComponent implements OnInit {
 
         });
 
-      } else {
-
-        swal('Your imaginary file is safe!');
-
       }
+
     });
 
   }
