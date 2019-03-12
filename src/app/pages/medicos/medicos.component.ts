@@ -11,6 +11,7 @@ export class MedicosComponent implements OnInit {
 
   medicos: Medico[] = [];
   desde: number = 0;
+  cargando: boolean = true;
 
   constructor(
     public _medicoService: MedicoService,
@@ -24,8 +25,12 @@ export class MedicosComponent implements OnInit {
 
   cargarMedicos() {
 
+    this.cargando = true;
+
     this._medicoService.cargarMedicos()
                        .subscribe( medicos => this.medicos = medicos );
+
+    this.cargando = false;
 
   }
 
@@ -59,9 +64,13 @@ export class MedicosComponent implements OnInit {
 
     }
 
+    this.cargando = true;
+
     this._medicoService
         .buscarMedicos( termino )
         .subscribe( medicos => this.medicos = medicos );
+
+    this.cargando = false;
 
   }
 

@@ -43,7 +43,7 @@ export class MedicoService {
 
   }
 
-  borrarMedico( id: string ){
+  borrarMedico( id: string ) {
 
     const url = URL_SERVICIOS + '/medico/' + id + '?token=' + this._usuarioService.token;
 
