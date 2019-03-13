@@ -9,7 +9,10 @@ import { SettingsService,
          MedicoService,
         } from './service.index';
 import { HttpClientModule } from '@angular/common/http';
+
 import { LoginGuardGuard } from './guards/login-guard.guard';
+import { AdminGuard } from './guards/admin.guard';
+
 import { SubirArchivoService } from './subirArchivo/subir-archivo.service';
 import { ModalUploadService } from '../components/modal-upload/modal-upload.service';
 
@@ -22,9 +25,10 @@ import { ModalUploadService } from '../components/modal-upload/modal-upload.serv
     SettingsService,
     SharedService,
     SidebarService,
-    LoginGuardGuard,
     SubirArchivoService,
     ModalUploadService,
+    LoginGuardGuard,
+    AdminGuard,
     UsuarioService,
     HospitalService,
     MedicoService,
