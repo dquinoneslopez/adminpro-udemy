@@ -7,6 +7,7 @@ import { SettingsService,
          UsuarioService,
          HospitalService,
          MedicoService,
+         VerificaTokenGuard,
         } from './service.index';
 import { HttpClientModule } from '@angular/common/http';
 
@@ -32,6 +33,7 @@ import { ModalUploadService } from '../components/modal-upload/modal-upload.serv
     UsuarioService,
     HospitalService,
     MedicoService,
+    VerificaTokenGuard,
   ],
   declarations: []
 })

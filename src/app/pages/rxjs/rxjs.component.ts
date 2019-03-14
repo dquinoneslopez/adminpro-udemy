@@ -44,20 +44,11 @@ export class RxjsComponent implements OnInit, OnDestroy {
 
         observer.next( salida );
 
-        // if (contador === 3) {
-        //   clearInterval( intervalo );
-        //   observer.complete();
-        // }
-        // if ( contador === 2 ) {
-        //   observer.error( 'Auxilio' );
-        // }
-
       }, 1000);
 
     }).pipe(
       map( resp => resp.valor ),
       filter( ( valor, index ) => {
-        // console.log( 'Filter ', valor, index );
         if ( (valor % 2) === 0 ) {
           // par
           return false;
